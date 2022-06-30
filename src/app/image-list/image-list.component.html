@@ -1,0 +1,9 @@
+<div class="main-container">
+  <ng-container *ngFor="let imageUrl of imageUrls; let i = index">
+    <div class="gallery-container" [ngClass]="cssList[i]">
+      <div class="gallery-item">
+        <div class="image"><img [src]="imageUrl" /></div>
+      </div>
+    </div>
+  </ng-container>
+</div>

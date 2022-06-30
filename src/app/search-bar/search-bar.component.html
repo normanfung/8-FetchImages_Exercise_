@@ -1,0 +1,17 @@
+<div class="box">
+  <form (submit)="onSubmit($event, searchInput.value)">
+    <div class="field is-grouped">
+      <p class="control is-expanded">
+        <input
+          class="input"
+          #searchInput
+          placeholder="Search for Photos"
+          type="text"
+        />
+      </p>
+      <p class="control">
+        <button class="button is-success" type="submit">Search</button>
+      </p>
+    </div>
+  </form>
+</div>
